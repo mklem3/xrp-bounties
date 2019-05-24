@@ -5,11 +5,10 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: '<firebase-api-key>', 
-    projectId: '<firebase-project-id>',
+    apiKey: 'AIzaSyBQpqVRF1YLNUrPQsF5TgE5veAof_bru68',
+    projectId: 'xrp-bounties',
   }
 };
-// Make a copy of this file and name it environment.ts
 
 /*
  * For easier debugging in development mode, you can import the following file
