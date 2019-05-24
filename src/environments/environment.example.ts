@@ -9,7 +9,7 @@ export const environment = {
     projectId: '<firebase-project-id>',
   }
 };
-
+// Make a copy of this file and name it environment.ts
 
 /*
  * For easier debugging in development mode, you can import the following file
