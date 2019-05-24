@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-gap: 10px;
+}
+
+.bounty-image {
+  height: 6em;
+}
+
+@media (max-width: 912px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (max-width: 512px) {
+  .grid {
+    grid-template-columns: 100%;
+  }
+}
