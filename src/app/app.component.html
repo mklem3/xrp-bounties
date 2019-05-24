@@ -2,6 +2,11 @@
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
+    <ul>
+      <li *ngFor="let bounty of bounties | async">
+        {{ bounty.name }}
+      </li>
+    </ul>
   </h1>
 </div>
 <router-outlet></router-outlet>
