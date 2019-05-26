@@ -1,0 +1,27 @@
+<div class="grid">
+  <mat-card class="bounty-card" *ngFor="let bounty of bounties | async">
+    <mat-card-header>
+      <div mat-card-avatar>
+        <img
+          mat-card-image
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAeFBMVEX///8AAAD7+/sEBAQ0NDSzs7PBwcHt7e0VFRX19fUMDAwYGBjp6enNzc1iYmLd3d1QUFB2dnZBQUEhISGUlJR1dXWJiYlJSUmfn598fHwmJiYvLy9mZmbT09O/v78rKyulpaU7OztcXFxtbW2YmJiGhoatra3JycnQiXXtAAAGwklEQVR4nO2d63ayOhCGkwCeLX71gHhqVbbe/x3uBLTaVmYCJJN0rbyrP1oTYB5fpMnkIGNBQUFBQUFBQUFBQUGOJFwHYEaCJTGgnev4nrWDIj0wtuCATt4YJk5QnAtVZc2jSP68FJ+5BrhrVhui/FmrGoIV9aQRP7kmqHSSodSqqD7piqS2lh+eDGdQhMX9iSXk3QV4Mhu6pZAcGeTH+vHkRe6ud8ckw3eN+6oS4olbEogjevZDyWNPGvih5K0nIEe0/t0yEewCHOCMBOa4vGpheUnSgsNLklYcHpK05CjbwiBJn7LRL1g/hjgSKBjEk3hCRyLYZNvSj+pw0JMtGQnGAfpRncALTyQHeF8hfmiQ0HiC+DHS4CjvrhHkCcEnHvmcj3p6IQjWg0jse4L5ocnhnMQYhzrVwR0JxnFocnGHngiWfhjyQ4Nkk9oikRxzgxwoydwSiXEORyQWOG4kdSe1QwJyRC05SpIBKQnCMZ62vaBg+zEhCcaxb385UhKLHKQkVjkISeSFbHLgJJ0vcL/MFHqwdOdASQatHyXEHCQkJBwEJEQc6AexKwnCYbKBKh+NG2skhBxWSUg5LJIQc1gjEexKy4GT2Ogq2OmIgiRNkwL3U4JJDlsdasST5iSOOIx74owDJ0FT5N9PBqdmLXKgSXI1SUc7mwlNS7KfYkbSy3w31M0vD99ccmAkEd/2NEyRFXpAWrTksC6MhJ8nCIosnJw5wkEynNQ/QncXH6+GMtq6kWP5+nA1Bg6P+JHAjzIWZLiV8/lqwl6xlK9MVnPADkI/lGBPZNHglPRvsd9VHZicBhAGoR9ldMizqywbzxbTbzH1p4vZmIMYxH6UUcEkt8JxfMpXxWJRrPJTPH4q8MIPJekJOI2qjOpX+e9XfnJkLia8gBMNv0J/mteKVnbCoUnSQK44TJO44zBL4pKjnLBuiCRyPQ1/aYaD86VTDKki6m6KPEXhmkOwHjQOq8kxbznMaZZkckL+X2MY/ETcLKkjYetBF0MGa38WSKVtTVF2pK6jf0i+n0ncAkUeECf+2KEkmCg2vBGLqrophFcYrHxXh8VWH0VV2xZDv+yoJCMSlyzSYSkrZRfhI4aSimqff5Sh1rXabwUf+Z75iqGkIhO9PB7dg37wPP4YxXnvXtljleGln+fjy/8tg+P5M/2q5rnuCZNp8t8ui7ebUttjtvsvmfafa/wFPYX6lAz6UfJnJL4HLf4iQ1BQUFBQUNA3fRuw+pN6Efyf4/mKt5/ur0mp6z7t/yz1XFWcw+k6n20HT/3EaLCd5evp8FHHa5V9xOsqm9f11+fZ6iqY5z0r9UaL3nnz3Dt/0WHnm3NPeGzLt9xDnSH3Mr+zD4eZVjbolg+aHVzH+0oqa/quR/FgefcsX1rNW8qaYNxRMp1ZUZRK35pi3FHe/EnGy3e0gGfKgCiDwhNTBEuzDkNW8sDM6jxMfV3qJ4VrogwurhnUO7nsNIJ4M2Xp+PYSrG9k8kPEM6fjocja80YkHw4/KIJN6xdfNSZpvxS3O8e1fs1EC5LR1Q2JWQ53JKY5XJGUHGhoz815ncmA9CQaftxLo5FU9OPFukOoScC1H18BD467xWGaTqTS6WGxq4YVYZZma1AMcKCTfjfnZPLzuElyRqdH4BtOkXHIstEpuWVLvoK6/TpMTiNkMjYZCeYHHy3L/viLcMrX9kvktiQigTkiHu1SKEOiStIdOH+QhgTzI8Y7r6pjHLv2BNmkjuda85ZkpRxcRGKdBOEY66ZFVNIFanDaJsE2DWzQFJddgG7b/nXjWEMczTakRFZuvNo41iBH7XV5uUVowyWu8Fa+1kgMczgjsbK1sQMSS1s0k5NY25Id2hLeAgnG0WU7EUoSixykJFY5CEkEvIa+KwdGsjBFItgKWrPdnQMmifjKDAkBBwkJCQcBCRGHdRKE483ko/HNIgnCYfhLlXbWSGg57JGgHMbbQXZIqP1QskEi2D9SP6prgiT/2lzTBYcNEsGWDjhQkmXz7rQLP6orm/QE4Tjboqh0NkaC3Fe57SxgbujuQvywzIGSaHvi1o8qAjOeuPVDCfVES+BTg4QDJdFqVYCtaSIOlOQNP4MfHN1JfOHoSuIPRzcSm73N5sL62fVHghzG8mT6UpnBNiR++aHUzhPf/FBq4Qm0w5QzDpTk915WcH7MGQdK8jND6C1HQxKSbHhbNcjaEo1PtJX2+AzpKF4baY6YwRyf7jkUyacGCfAV7p5w3Eii2kDVV6/3s3pWbzgQT7ha7JB/HONaecNRktTHefzIXccXFBQUFBQUFBQUFBT05/U/KS1s3PsjUToAAAAASUVORK5CYII="
+          alt="Logo of XRP"
+        />
+      </div>
+      <mat-card-title>{{ bounty.title }}</mat-card-title>
+      <mat-card-subtitle>{{ bounty.benefactor }}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="bounty-image" mat-card-image [src]="bounty['bounty-image']"/>
+    <mat-card-content>
+      <p>
+        {{ bounty.description }}
+      </p>
+      <hr />
+      <p class="award">Award: {{ bounty.bounty }} XRP</p>
+      <p class="due">Due: {{ bounty["due-date"].toDate() }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Details (Not Implemented)</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,12 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div class="container">
   <h1>
     Welcome to {{ title }}!
-    <ul>
-      <li *ngFor="let bounty of bounties | async">
-        {{ bounty.name }}
-      </li>
-    </ul>
+
+    <app-bounty-list></app-bounty-list>
   </h1>
 </div>
 <router-outlet></router-outlet>
