@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { RippledService } from 'src/services/rippled.service';
+import { Transaction } from 'src/data/rippled/transactions/data';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'xrp-bounties';
+
+  constructor(private rippledService: RippledService) { 
+    this.rippledService.getLedger('').subscribe((resp) => {
+      console.log(resp);
+    });
+  }
 
 }
